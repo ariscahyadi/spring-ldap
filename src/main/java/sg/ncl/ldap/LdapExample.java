@@ -68,7 +68,7 @@ public class LdapExample {
         contextSource.setUrl("ldap://localhost:3389");
         contextSource.setBase("");
         contextSource.setUserDn("cn=admin,dc=dev,dc=ncl,dc=sg");
-        contextSource.setPassword("deterinavm");
+        contextSource.setPassword("...");
 
         try {
             contextSource.afterPropertiesSet();
@@ -92,7 +92,7 @@ public class LdapExample {
         }
 
         // Create new user with same UID, SN, and DN
-        ldapClient.createUser("hk", "hk123");
+        ldapClient.createUser("hk", "...");
 
         // Get specific user based on the UID (not UID Number)
         List<String> users = ldapClient.getUser("hk");
