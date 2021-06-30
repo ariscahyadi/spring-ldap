@@ -37,7 +37,7 @@
     </dependencies>
     <distributionManagement>
     <repository>
-      <id>github</id>
+      <id>ariscahyadi</id>
       <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/ariscahyadi/spring-ldap</url>
     </repository>
