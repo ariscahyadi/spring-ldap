@@ -37,6 +37,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvnw -B verify sonar:sonar -Dsonar.projectKey=ariscahyadi-github -Dsonar.organization=spring-ldap -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=ariscahyadi-github -Dsonar.organization=spring-ldap -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
     - name: Build Maven
       run: mvn -B package -file pom.xml
